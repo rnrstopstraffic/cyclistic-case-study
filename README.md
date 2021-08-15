@@ -6,11 +6,11 @@ The direct stakeholders in this scenario are Lily Moreno (director of marketing)
 
 ## Data Source
 
-We are using internal data provided by Cyclistic which tracks each individual ride over the most recent twelve months. Since we collected the data from our own records, we are confident in the reliability and completeness of the data. The dataset provides relevant information about the type, duration, and location of each ride, along with a description of the user type.  Each month's data was contained in a separate CSV file and merged together into a single CSV dataset using a Python script (see Cyclist_Compile.ipynb).
+We are using internal data provided by Cyclistic which tracks each individual ride over the most recent twelve months. Since we collected the data from our own records, we are confident in the reliability and completeness of the data. The dataset provides relevant information about the type, duration, and location of each ride, along with a description of the user type.  Each month's data was contained in a separate CSV file and merged together into a single CSV dataset using a Python script (see Cyclist_Compile.ipynb). The cleaning and analysis is done both in parallel using Python and R (both sets of scripts can be found in this repository)
 
 ## Importing and cleaning
 
-The following transformations and modifications were made to the original dataset (see Cyclist_Clean_Wrangle.ipynb):
+The following transformations and modifications were made to the original dataset (see Cyclist_Clean_Wrangle.ipynb or Cyclist_Clean_Wrangle.R):
 
 1. Converted started_at and ended_at fields to datetime type
 
@@ -28,7 +28,7 @@ The cleaned data was saved as Version 2.
 
 ## Analysis
 
-We compared the number of rides, proportion of rides, average duration, and total duration of rides between members and casual users grouped by both month and day of the week. We found the following results (see Cyclist_Analysis.ipynb):
+We compared the number of rides, proportion of rides, average duration, and total duration of rides between members and casual users grouped by both month and day of the week. We found the following results (see Cyclist_Analysis.ipynb or Cyclist_Analysis.R):
 
 1. In every single month, the number of rides by members exceeded those by casual riders (members made up about 59% of total rides throughout the year). Both types of ridership peaked in August and were at their lowest in January.
 
